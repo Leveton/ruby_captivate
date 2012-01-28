@@ -15,9 +15,3 @@ def process_captivate_results
     handle.close
     file_save = File.open(handle)
 end
-
-def self.hi
-    puts "Hello world!"
-end
-
-end
