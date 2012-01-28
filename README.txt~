@@ -4,7 +4,7 @@ https://github.com/Leveton/ruby_captivate
 
 == DESCRIPTION:
 
-Process Adobe Captivate SWF files with Ruby.  Creates a "captivate_results" directory in the "doc" directory of your project.  In "captivate_results", XML files containing the Captivate quiz results will be appear after a quiz completed.  Creates the necessary route and controller upon calling "rails generate ruby_captivate:install"
+Process Adobe Captivate swf files with Ruby.  Creates a "captivate_results" directory in the "doc" directory of your project.  In "captivate_results", XML files containing the Captivate quiz results will be appear after a quiz completed.  Creates the necessary route and controller upon calling "rails generate ruby_captivate:install"
 
 == FEATURES/PROBLEMS:
 
