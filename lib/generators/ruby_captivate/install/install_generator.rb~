@@ -1,6 +1,7 @@
 module Ruby_Captivate
 
   class InstallGenerator < Rails::Generators::Base
+    include Thor::Group
     include Thor::Actions
     source_root File.expand_path('../../../templates', __FILE__)
     class_option :template_engine
