@@ -5,9 +5,7 @@ module Ruby_Captivate
     source_root File.expand_path('../../../templates', __FILE__)
     class_option :template_engine
 
-
-
-        copy_file 'ruby_captivate.rb', 'config/initializers/ruby_captivate.rb'
+    copy_file 'ruby_captivate.rb', 'config/initializers/ruby_captivate.rb'
 
 
   end
