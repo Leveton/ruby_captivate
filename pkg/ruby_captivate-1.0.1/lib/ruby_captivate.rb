@@ -1,5 +1,5 @@
 class RubyCaptivate
-  VERSION = '1.0.4'
+  VERSION = '1.0.7'
 
 def process_captivate_results
     company_name = params[:CompanyName]

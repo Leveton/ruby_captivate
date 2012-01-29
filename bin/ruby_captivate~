@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 require 'ruby_captivate'
-puts Hola.hi(ARGV[0])
+puts RubyCaptivate.hola(ARGV[0])
 abort "you need to write me"
