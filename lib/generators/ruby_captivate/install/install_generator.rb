@@ -4,7 +4,7 @@ module Ruby_Captivate
     source_root File.expand_path('../../../templates', __FILE__)
     class_option :template_engine
 
-       create_file "config/initializers/initializer.rb", "# Add initialization content here"
+        copy_file 'ruby_captivate.rb', 'config/initializers/ruby_captivate.rb'
 
 
   end
