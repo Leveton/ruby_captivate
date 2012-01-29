@@ -3,24 +3,12 @@ module Ruby_Captivate
   class InstallGenerator < Rails::Generators::Base
     source_root File.expand_path('../../../templates', __FILE__)
     class_option :template_engine
-    require 'thor'
+    include Thor
 
 
         copy_file 'ruby_captivate.rb', 'config/initializers/ruby_captivate.rb'
 
 
   end
-
-def copy_file(source, *args, &block)
-  config = args.last.is_a?(Hash) ? args.pop : {}
-  destination = args.first || source
-  source = File.expand_path(find_in_source_paths(source.to_s))
-
-  create_file destination, nil, config do
-    content = File.binread(source)
-    content = block.call(content) if block
-    content
-  end
-end
 
 end
