@@ -14,7 +14,7 @@ Hoe.spec 'ruby_captivate' do
   # you'll never have to touch them again!
   # (delete this comment too, of course)
 
-  # developer('FIX', 'FIX@example.com')
+  # developer('Michael Leveton', 'mleveton@prepcloud.com')
 
   # self.rubyforge_name = 'ruby_captivatex' # if different than 'ruby_captivate'
 end

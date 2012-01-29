@@ -1,5 +1,5 @@
 class RubyCaptivate
-  VERSION = '1.0.0'
+  VERSION = '1.0.3'
 
 def process_captivate_results
     company_name = params[:CompanyName]
@@ -13,5 +13,11 @@ def process_captivate_results
     handle = File.open(file_path, 'w' )
     handle << file_data
     handle.close
-    file_save = File.open(handle)
+    #file_save = File.open(handle)
+end
+
+def self.hola
+  puts 'hello'
+end
+
 end
