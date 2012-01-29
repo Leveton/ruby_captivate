@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name = "ruby_captivate"
-  s.version = "1.0.22"
+  s.version = "1.0.23"
   s.authors = ["Michael Leveton"]
   s.date = %q{2012-01-27}
   s.description = 'Adobe Captivate reporting for Ruby'
@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
   s.bindir = "bin"
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-  #s.add_dependency('thor')
+  s.add_dependency('thor')
 end
