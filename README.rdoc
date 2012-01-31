@@ -8,8 +8,13 @@ Process Adobe Captivate SWF files with Ruby on Rails 3.0+
 
 == SYNOPSIS:
 
-After completing a Captivate quiz, a "captivate_results" directory is auto-created beneath the "doc" directory of your project.  In this "captivate_results" directory, XML files containing the Captivate quiz results will also be auto-created
-After installation, take a Captivate quiz and check for a generated XML file in 'doc/captivate_results/'.  You can then use the Nokogiri gem to parse the results. http://rubygems.org/gems/nokogiri
+After completing a Captivate quiz, a "captivate_results" directory is auto-created beneath the "doc" directory of your project.
+
+In this "captivate_results" directory, XML files containing the Captivate quiz results will also be auto-created.
+
+After installation, take a Captivate quiz and check for a generated XML file in 'doc/captivate_results/'.  You can then use the Nokogiri gem to parse the results.
+
+http://rubygems.org/gems/nokogiri
 
 == REQUIREMENTS:
 
@@ -17,14 +22,15 @@ Rails >= 3.0
 
 == INSTALL:
 
-**In your Captivate instance, you must disable error popup windows - these windows show up even with Captivates' native PHP reporting script.  You also must specify a target URL of http://www.<yourdomain.com>/internalreport**
+In your Captivate instance, you must disable error popup windows - these windows show up even with Captivates' native PHP reporting script.  You also must specify a target URL of http://www.<yourdomain.com>/internalreport
 
 Detailed instructions on how to set all this up on the Captivate end can be found at: https://tv.adobe.com/watch/publish-and-track-results/reporting-using-lms-or-internal-server/
 
-gem install ruby_captivate
-add the gem to your gemfile and then run the generator:
+<b>gem install ruby_captivate</b>
 
-rails generate ruby_captivate:install
+Add the gem to your gemfile and then run the generator:
+
+<b>rails generate ruby_captivate:install</b>
 
 == LICENSE:
 
