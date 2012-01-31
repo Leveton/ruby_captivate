@@ -22,8 +22,9 @@ Rails >= 3.0
 
 == INSTALL:
 
-<i>In your Captivate instance, you must disable error popup windows - these windows show up even with Captivates' native PHP reporting script. You also must specify a target URL of "http://www.<yourdomain.com>/internalreport"</i>
+<i>In your Captivate instance, you must disable error popup windows - these windows show up even with Captivates' native PHP reporting script. You also must specify a target URL of "http://www.example.com/internalreport"</i>
 
+Detailed instructions on how to set all this up on the Captivate end can be found at: https://tv.adobe.com/watch/publish-and-track-results/reporting-using-lms-or-internal-server/
 
 run:
 
