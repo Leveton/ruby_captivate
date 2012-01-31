@@ -1,7 +1,5 @@
 = Ruby Captivate
 
-== DESCRIPTION:
-
 Process Adobe Captivate SWF files with Ruby on Rails 3.0+
 
 == SYNOPSIS:
