@@ -2,6 +2,8 @@
 
 Process Adobe Captivate SWF files with Ruby on Rails 3.0+
 
+http://rubygems.org/gems/ruby_captivate
+
 == SYNOPSIS:
 
 After completing a Captivate quiz, a "captivate_results" directory is auto-created beneath the "doc" directory of your project.
