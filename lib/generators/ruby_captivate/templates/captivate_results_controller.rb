@@ -1,6 +1,6 @@
-class Captivate_ResultsController < ApplicationController
+class CaptivateResultsController < ApplicationController
 
-def process_results
+  def process_results
     company_name = params[:CompanyName]
     department_name = params[:DepartmentName]
     course_name = params[:CourseName]
@@ -11,9 +11,9 @@ def process_results
     file_path = File.join(file_path, file_name)
     handle = File.open(file_path, 'w' )
     handle << file_data
-    handle.close
+    handle.close # To parse the resulting XML file, you could now use Nokogiri.  For example:
     #file_save = File.open(handle)
-end
-
-
+    #file_iterate = Nokogiri::XML(file_save)
+    ## DO SOMETHING WITH 'file_iterate'
+  end
 end

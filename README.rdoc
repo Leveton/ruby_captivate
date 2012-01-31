@@ -1,0 +1,52 @@
+= ruby_captivate
+
+https://github.com/Leveton/ruby_captivate
+
+== DESCRIPTION:
+
+Process Adobe Captivate SWF files with Ruby on Rails 3.0+
+
+== SYNOPSIS:
+
+After completing a Captivate quiz, a "captivate_results" directory is auto-created beneath the "doc" directory of your project.  In this "captivate_results" directory, XML files containing the Captivate quiz results will also be auto-created
+After installation, take a Captivate quiz and check for a generated XML file in 'doc/captivate_results/'.  You can then use the Nokogiri gem to parse the results. http://rubygems.org/gems/nokogiri
+
+== REQUIREMENTS:
+
+Rails >= 3.0
+
+== INSTALL:
+
+**In your Captivate instance, you must disable error popup windows - these windows show up even with Captivates' native PHP reporting script.  You also must specify a target URL of http://www.<yourdomain.com>/internalreport**
+
+Detailed instructions on how to set all this up on the Captivate end can be found at: https://tv.adobe.com/watch/publish-and-track-results/reporting-using-lms-or-internal-server/
+
+gem install ruby_captivate
+add the gem to your gemfile and then run the generator:
+
+rails generate ruby_captivate:install
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2012 Michael Leveton
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

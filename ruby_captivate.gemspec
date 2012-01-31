@@ -2,14 +2,13 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name = "ruby_captivate"
-  s.version = "1.0.35"
+  s.version = "1.0.36"
   s.authors = ["Michael Leveton"]
   s.date = %q{2012-01-27}
-  s.description = 'Adobe Captivate reporting for Ruby'
+  s.description = 'Adobe Captivate reporting for Rails 3.0+'
   s.summary = s.description
   s.email = 'mleveton@prepcloud.com'
   s.files = `git ls-files`.split("\n")
-  #s.files = ['README.txt', 'lib/ruby_captivate.rb','test/test_ruby_captivate.rb', 'bin/install.rb', 'bin/initializer_generator.rb']
   s.homepage = 'https://github.com/Leveton/ruby_captivate'
   s.has_rdoc = true
   s.rubyforge_project = 'ruby_captivate'
