@@ -1,6 +1,4 @@
-= ruby_captivate
-
-https://github.com/Leveton/ruby_captivate
+= Ruby Captivate
 
 == DESCRIPTION:
 
