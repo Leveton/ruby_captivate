@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name = "ruby_captivate"
-  s.version = "1.0.36"
+  s.version = "1.1.0"
   s.authors = ["Michael Leveton"]
   s.date = %q{2012-01-27}
   s.description = 'Adobe Captivate reporting for Rails 3.0+'
