@@ -9,6 +9,10 @@ module Ruby_Captivate
         template "captivate_results_controller.rb", "app/controllers/captivate_results_controller.rb"
       end
 
+      def add_stub_view
+        template "process_results.html.erb", "app/views/process_results.html.erb"
+      end
+
       def add_captivate_routes
         captivate_route  = "match '/internalreport', :to => 'captivate_results#process_results'"
         route captivate_route
