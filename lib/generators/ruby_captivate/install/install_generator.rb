@@ -10,7 +10,7 @@ module Ruby_Captivate
       end
 
       def add_stub_view
-        template "process_results.html.erb", "app/views/process_results.html.erb"
+        template "process_results.html.erb", "app/views/captivate_results/process_results.html.erb"
       end
 
       def add_captivate_routes
