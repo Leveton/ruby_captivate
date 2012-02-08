@@ -32,7 +32,7 @@ Add the gem to your gemfile and then run the generator:
 
 <b>rails generate ruby_captivate:install</b>
 
-This will create a route, a captivate_results_controller, and a process_results view file.  The view file is only a stub file as Adobe Captivate will show your users an 'unknown error' popup without one due to Rails complaining about the lack of a view template.
+This will create a route, a captivate_results_controller, and a process_results view file.  The view file is only a stub file as Adobe Captivate will show your users an 'unknown error' popup without one due to Rails complaining about the lack of a view template.  A 'skip_before_filter' is added to the controller, otherwise Rails won't be able to verify the CSRF token coming from Captivate.
 
 == LICENSE:
 

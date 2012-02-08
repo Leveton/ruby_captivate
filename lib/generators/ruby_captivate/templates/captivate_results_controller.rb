@@ -1,4 +1,5 @@
 class CaptivateResultsController < ApplicationController
+  skip_before_filter :verify_authenticity_token, :only => [:process_results]
 
   def process_results
     company_name = params[:CompanyName]
